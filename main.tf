@@ -13,7 +13,7 @@ data "aws_ami" "windows" {
 
 locals {
   ssh_key_name   = var.ssh_key_name != "" ? var.ssh_key_name : "${var.name}-ssh"
-  ami_id         = data.aws_ami.windows.id
+  ami_id         = var.ami_id == "" || var.ami_id == null ? data.aws_ami.windows.id : var.ami_id
 }
 
 resource "aws_security_group" "this" {
