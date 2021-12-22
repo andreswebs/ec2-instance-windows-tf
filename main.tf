@@ -59,6 +59,7 @@ module "ec2_role" {
   policies = [
     "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore",
     "arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy",
+    "arn:aws:iam::aws:policy/AmazonSSMDirectoryServiceAccess"
   ]
 }
 
