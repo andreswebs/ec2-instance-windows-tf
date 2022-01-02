@@ -2,6 +2,8 @@ live/terragrunt.hcl
 .terragrunt-cache
 
 backend.tf
+provider.tf
+
 terraform.tf
 
 .terraform
