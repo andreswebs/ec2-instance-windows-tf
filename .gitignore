@@ -23,3 +23,5 @@ config.yaml
 # Keep examples
 !**/config.yml.example
 !**/terragrunt.hcl.example
+
+.envrc
