@@ -1,15 +1,13 @@
 live/terragrunt.hcl
 .terragrunt-cache
 
-backend.tf
-provider.tf
-
 terraform.tf
 
 .terraform
 .terraform.lock.hcl
 *.tfvars*
 *.tfstate*
+*.tfbackend*
 
 *.diff
 *.bak
@@ -27,4 +25,3 @@ config.yaml
 .envrc
 
 *.pem
-
