@@ -14,12 +14,12 @@ variable "volume_encrypted" {
 
 variable "volume_size" {
   type    = number
-  default = 50
+  default = 100
 }
 
 variable "instance_type" {
   type    = string
-  default = "m5a.xlarge"
+  default = "m7a.xlarge"
 }
 
 variable "instance_termination_disable" {
@@ -45,8 +45,9 @@ variable "ami_id" {
   default = ""
 }
 
-variable "cidr_whitelist" {
-  type = list(string)
+variable "cidr_whitelist_ipv4" {
+  type    = list(string)
+  default = []
 }
 
 variable "enclave_enabled" {
