@@ -1,28 +1,15 @@
-live/terragrunt.hcl
-.terragrunt-cache
+.DS_Store
+.envrc
 
-terraform.tf
+.external_modules/
 
 .terraform
 .terraform.lock.hcl
 *.tfvars*
 *.tfstate*
 *.tfbackend*
+!example.s3.tfbackend
 
 *.diff
 *.bak
 *.kubeconfig*
-
-config.yml
-config.yaml
-
-!.tfsec/config.yml
-
-# Keep examples
-!**/config.yml.example
-!**/terragrunt.hcl.example
-
-.envrc
-
-*.pem
-.DS_Store
